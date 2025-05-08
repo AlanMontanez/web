@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donald Knuth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: brown;">
+    <header>
+        <h1>Donald Knuth Biografia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Carrera profesional</a></li>
+                <li><a href="pagina3.html">Libros y premios</a></li>
+                <li><a href="Galeria.html">Galeria y Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="open-gallery" class="open-gallery-btn">Ver Galería</button>
+
+    <div id="gallery-container" class="gallery-container" style="display: none;">
+        <button id="close-gallery" class="close-gallery-btn">Cerrar Galería</button>
+        <div class="gallery">
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOztf6Ngpb5Q2wZA1D1HlzNdka-KJcy1IzHzBW2Chqe75C4QRgRPmYkJpXbaBfSOrmAiRZPMtFUJht06CcnLVC3jwixZ3OGYwqSFzVQtB_KV88=w1905-h991" alt="Imagen 1" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMMPS0oCYqIU4pDhbmBKiaBT5eYPakSOfOSdgMS3895goODu9pW8JE97T0KbmTgzdwLpZhvK5riQ6hQcemRcQuCvxjUoy0RNYg_nnQFXQV2yoY=w1920-h991" alt="Imagen 2" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOBfwKz0Zl75CEc9B5IbX7obTFpS2tqT21Q1qQPiqTXefoWjJ_7yLjGY_Kp7mWowQMNoKwaDppBXDSBk1Xhw1GCMlCBxQIF6tJ4jhVg8RETdQ=w1920-h991" alt="Imagen 3" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPGl9sPLM_Xt83ZMXS9G9hoGHPrCMJlkGGf2APdrdZrGJCf0yTbwdGgPTpe3HGxQVVmInhC9gmyvjB7rqGogrqVNtM1OEFLwOqiQcpRhGM_TA=w1905-h991" alt="Imagen 4" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPjLD5-fjn-2qh6O4fMkofVYYDXOXtA_Z5kdu21dJ6jvsyGUII6yOq-6ez5XCRglFFp97UnM48dT82v9jc7YjjmdoH4ACy1Xh-InBbfyRBWnTM=w1905-h991" alt="Imagen 5" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOUqLlh9BfrvV7LvncZ1FnWbrXE0kiBVqljreLCDCNIO24RCqm8LZcm20hDrwtMiwLjQPBcrlZrLgRfd4vZPJqukRWeq1NvnyDSrb_0i0corQ=w1905-h991" alt="Imagen 6" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOfcp7gPtpZON-3cvULUp53rsaW94z9nY1IG0yjfZDUx-CopT2TZXGtqX270_gJYTFeZsMLg-yWXu82HihBgYK1T_z0aQXxqhe1CLp-FfxUNXo=w1905-h991" alt="Imagen 7" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPC-1E9q7Bpf5YYtU-Y6VdfJMBvCSL9TphaIDZxTzfzJrf5JwITBFISsZ9vVDnGIWIvbmBAHDTf1Dg3uW5eWQefRtxyQWn1eAxzW0eeC8hxOQ=w1905-h991" alt="Imagen 8" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPK8aTsaX0xDBgBJKMdxCensFBEOzhBOzKkIdBd6qQHaUwrTGJJXBSR6aidPylfM8Iw_huk9CVC9eI0JbYrWGX-9_Fd1Hehx13wkl_jqrToZZ8=w1905-h991" alt="Imagen 9" class="gallery-item">
+            </div>
+            <div class="image-container">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNuZRSfvehrFu2Kkf3Z4f8HB9nqvx4rU1f1cznkwsXmOz--RuQUrHSCR90sw-0ye_qvC8epNOQwb3SKcwaBRIOAKeCUNjAka9eMZE31VjrzpnM=w1920-h991" alt="Imagen 10" class="gallery-item">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span id="close-modal" class="close">&times;</span>
+        <span id="prev" class="nav-arrow">&#10094;</span>
+        <img id="modal-img" src="" alt="Imagen ampliada">
+        <span id="next" class="nav-arrow">&#10095;</span>
+    </div>
+
+    <script>
+        let currentIndex = 0; 
+        const images = document.querySelectorAll('.gallery-item'); 
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+        const openGalleryBtn = document.getElementById('open-gallery');
+        const galleryContainer = document.getElementById('gallery-container');
+        const closeGalleryBtn = document.getElementById('close-gallery'); 
+
+        document.querySelectorAll('.gallery-item').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                currentIndex = index; 
+                modal.style.display = 'flex'; 
+                modalImg.src = this.src; 
+            });
+        });
+
+
+        document.getElementById('close-modal').addEventListener('click', function() {
+            modal.style.display = 'none'; 
+        });
+
+
+        prevBtn.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            modalImg.src = images[currentIndex].src;
+        });
+
+        nextBtn.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            modalImg.src = images[currentIndex].src;
+        });
+
+        openGalleryBtn.addEventListener('click', function() {
+            galleryContainer.style.display = 'block'; 
+            openGalleryBtn.style.display = 'none'; 
+        });
+
+        closeGalleryBtn.addEventListener('click', function() {
+            galleryContainer.style.display = 'none'; 
+            openGalleryBtn.style.display = 'block'; 
+        });
+    </script>
+    <h1>Formulario de Contacto</h1>
+
+    <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Gmail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("fHf77IVpmQ6KVp_0T"); 
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const form = event.target;
+
+            emailjs.sendForm("service_d2nk9ea", "template_w5vxxa7", form)
+                .then(function(response) {
+                    alert("¡Mensaje enviado con éxito!");
+                }, function(error) {
+                    alert("Error al enviar el mensaje. Intenta de nuevo.");
+                });
+        });
+    </script>
+</body>
+    <footer>
+        <p>22190340               AlanDavidMontañezBautista                606</p>
+    </footer>
+</html>
